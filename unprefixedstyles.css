@@ -1,0 +1,172 @@
+:root {
+  font-size: 15px;
+  --red: #ea5454;
+  --cyan: #44d3d2;
+  --yellow: #fcae4a;
+  --blue: #549ef2;
+  --black: #4d4f62;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--black);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*-----Mobile Styles-----*/
+h1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 275;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.166667px;
+  margin-bottom: 1.0667rem;
+}
+
+h1 span {
+  display: block;
+}
+
+h1 span:last-child {
+  font-weight: 600;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.3333rem;
+  line-height: 2rem;
+}
+
+main {
+  text-align: center;
+  margin: 76px 32px;
+}
+
+main p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.6667rem;
+  text-align: center;
+  letter-spacing: 0.0069rem;
+  opacity: 0.5;
+}
+
+section {
+  width: 20.7333rem;
+  height: 14.8rem;
+  margin-bottom: 1.6667rem;
+  border-radius: 8px;
+  box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+}
+
+
+.text {
+  margin: 1.8667rem;  
+}
+
+section p {
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.0902778px;
+  opacity: 0.5;
+}
+
+section img {
+  float: right;
+  margin-right: 1.8667rem;
+}
+
+.supervisor .border-top {
+  border-top: 4px solid var(--cyan);
+  border-radius: 8px 8px 0 0;
+}
+
+.team-builder .border-top {
+  border-top: 4px solid var(--red);
+  border-radius: 8px 8px 0 0;
+}
+
+.karma .border-top {
+  border-top: 4px solid var(--yellow);
+  border-radius: 8px 8px 0 0;
+}
+
+.calculator .border-top {
+  border-top: 4px solid var(--blue);
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 1000px) {
+    section:last-of-type {
+        margin-bottom: 5.3333rem;
+    }
+}
+
+/*-----Desktop Styles-----*/
+
+/*grid layouts*/
+@media (min-width: 1000px) {
+  .container {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Hero Hero Hero"
+      "Left Center Right"
+      "Left Center Right";
+    max-width: 1220px;
+    margin-bottom: 5.3333rem;
+  }
+  .Hero {
+    grid-area: Hero;
+  }
+  .Center {
+    grid-area: Center;
+    justify-self: center;
+  }
+  .Left {
+    grid-area: Left;
+    justify-self: center;
+  }
+  .Right {
+    grid-area: Right;
+    justify-self: center;    
+  }
+  .Hero {
+      align-self: flex-start;
+  }
+  
+
+}
+
+/*Desktop sizing*/
+@media (min-width:1000px) {
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    section {
+        width: 23.3333rem;
+        height: 16.6667rem;
+        margin-bottom: 2rem;
+    }
+
+    main p {
+        max-width: 36rem;
+        margin: auto;
+    }
+    
+}
+
