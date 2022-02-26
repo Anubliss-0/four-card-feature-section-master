@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Anubliss-0/four-cardfeature-section-master]
-- Live Site URL: [https://anubliss-0.github.io/four-cardfeature-section-master/]
+- Live Site URL: [https://anubliss-0.github.io/four-card-feature-section-master/]
 
 ## My process
 
